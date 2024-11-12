@@ -134,6 +134,9 @@ function catch_the_mole_infant () {
 function end_of_your_adventure () {
 	
 }
+function end_of_the_game () {
+	
+}
 function ask_more () {
 	
 }
@@ -172,6 +175,7 @@ function play_the_waiting_game () {
         adventure.addToTextlog("the little mole doesn't come at first. but after awhile he cautiously comes towards you")
     } else {
         adventure.addToTextlog("you keep staring for awhile until you hear a Russell of leaves outside")
+        end_of_the_game()
     }
 }
 function bad_adventure2 () {
