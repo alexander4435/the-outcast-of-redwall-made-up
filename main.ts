@@ -159,19 +159,25 @@ function keep_moving () {
         adventure.addToTextlog("you say wait come back here wile you catch the baby mole")
         catch_the_mole_infant()
     } else {
-        adventure.addToTextlog("you stay there for some time then you see a little head poke out and you say come over here")
+        adventure.addToTextlog("you stay there for some time then you see a little head poke out")
         play_the_waiting_game()
     }
 }
 function play_the_waiting_game () {
-    adventure.addToTextlog("then the baby mole starts to head towards you and he gets on your lap")
-    adventure.addToTextlog("")
-    adventure.addToTextlog("")
+    adventure.addToTextlog("you stay there for awhile having a staring competion")
+    adventure.addToTextlog("press(A) to say come over here")
+    adventure.addToTextlog("press(B) to keep staring")
+    pauseUntil(() => controller.anyButton.isPressed())
+    if (controller.A.isPressed()) {
+        adventure.addToTextlog("the little mole doesn't come at first. but after awhile he cautiously comes towards you")
+    } else {
+        adventure.addToTextlog("you keep staring for awhile until you hear a Russell of leaves outside")
+    }
 }
 function bad_adventure2 () {
 	
 }
-music.play(music.createSong(assets.song`going_on_an_adventure`), music.PlaybackMode.InBackground)
+music.play(music.createSong(assets.song`to_the_ballroom`), music.PlaybackMode.LoopingInBackground)
 adventure.addImageToTextLog(img`
     ..............c...........................eeeeeee...............
     .............cbb.........................e4444444e..............

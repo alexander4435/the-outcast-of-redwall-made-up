@@ -6,7 +6,8 @@
         "adventure": "github:microsoft/arcade-tutorial-extensions/adventure#v0.0.12",
         "adventure_imgs": "github:kiki-lee/adventure_imgs",
         "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
-        "sevenseg": "*"
+        "sevenseg": "*",
+        "Makey Makey Keymappings": "github:joylabz/makeymakey-makecode-arcade-extension#1.0.3"
     },
     "files": [
         "main.blocks",
